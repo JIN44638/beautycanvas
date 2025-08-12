@@ -47,6 +47,13 @@
       property="og:description"
       content="건강한 아름다움을 제안하는 라이프스타일 플랫폼 뷰티캔버스 입니다."
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!--전체 레이아웃 -->
@@ -80,11 +87,11 @@
           </div>
           <div class="header-bottom">
             <!-- 햄버거바 -->
-            <div class="hamberger_bar">
+            <button class="hamburger" id="hamburger">
               <span></span>
               <span></span>
               <span></span>
-            </div>
+            </button>
             <!-- 메뉴 -->
             <ul class="gnb2">
               <li><a href="#">랭킹</a></li>
@@ -96,6 +103,157 @@
           </div>
         </div>
       </header>
+      <!-- 비주얼슬라이드 -->
+      <section class="visual">
+        <img src="images/banner(txt).png" alt="비디비치" />
+        <div class="visual-inner contaniner"></div>
+      </section>
+      <!--weekly special  -->
+      <div class="weeklyspecial">
+        <div class="weeklyspecial-inner container">
+          <h3>weekly special</h3>
+          <ul class="weeklyspecial-img">
+            <li><img src="images/weeklyspecial-1-txt.png" alt="각질제거" /></li>
+            <li>
+              <img src="images/weeklyspecial-2-txt.png" alt="바캉스메이크업" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- product상품 -->
+      <div class="product-wrap">
+        <div class="product-inner container">
+          <!-- 상품왼쪽 -->
+          <div class="product product-left">
+            <h3>요즘 주목 받는 상품</h3>
+            <p>
+              <span>더보기</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </p>
+            <ul class="depth">
+              <li>
+                <img src="images/product 3.png" alt="샴푸" />
+                <p>그래비티 헤어리프팅 샴푸 엑스트라스트롱 475ml</p>
+                <span class="red">38,000 원</span>
+                <p class="product-coupon">
+                  <span class="gift">증정</span>
+                </p>
+              </li>
+              <li>
+                <img src="images/product 4.png" alt="크림" />
+                <p>피지오겔 레드수딩 리페어 크림 100ml</p>
+                <p>
+                  <span class="gray">39,500 원</span>
+                  <span class="red">26,900 원</span>
+                </p>
+                <p class="product-coupon">
+                  <span class="sale">세일</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- 상품오른쪽 -->
+          <div class="product product-right">
+            <h3>추천 상품</h3>
+            <p>
+              <span>더보기</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </p>
+            <ul class="depth">
+              <li>
+                <img src="images/product 1.png" alt="모기기피제" />
+                <p>모기기피제 스프레이 라벤더향 80ml</p>
+                <span class="gray">15,900원</span>
+                <span class="red">8,030 원</span>
+                <p class="product-coupon">
+                  <span class="sale">세일</span>
+                  <span class="coupon">쿠폰</span>
+                </p>
+              </li>
+              <li>
+                <img src="images/product 2.png" alt="크림" />
+                <p>일리윤 히알루론 모이스춰 수분 크림 100ml</p>
+                <p>
+                  <span class="gray">15,000 원</span>
+                  <span class="red">11,900 원</span>
+                </p>
+                <p class="product-coupon">
+                  <span class="sale">세일</span>
+                  <span class="coupon">쿠폰</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- new update -->
+      <div class="newupdate-wrap">
+        <div class="newupdate-inner container">
+          <h3>new update</h3>
+          <ul class="depth2">
+            <li>
+              <img src="images/newsupdate-2.jpg" alt="진정에센스" />
+              <p class="text-1">즉각 수분 충전 급속 진정 에센스</p>
+              <p class="text-2">붉은기 진정 첫단계 에센스</p>
+            </li>
+            <li>
+              <img src="images/newsupdate-1.jpg" alt="리페어마스크" />
+              <p class="text-1">열감 진정 리페어 마스크</p>
+              <p class="text-2">멸균 거즈 원단에 흔적수딩 앰플이 가득!</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- onlyhere -->
+      <div class="onlyhere-wrap">
+        <div class="onlyhere-inner container">
+          <h3>only here</h3>
+          <ul class="onlyhere-img">
+            <li>
+              <img src="images/onlyhere1-txt.png" alt="여름필수템" />
+            </li>
+            <li>
+              <img src="images/onlyhere3-txt.png" alt="공간가득" />
+            </li>
+            <li>
+              <img src="images/onlyhere2-txt.png" alt="입터짐" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 하단 -->
+      <footer class="footer">
+        <div class="footer-inner container">
+          <ul class="footer-top">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">채용안내</a></li>
+            <li><a href="#">가맹점 개설문의</a></li>
+            <li><a href="#">상품입점 문의</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+          <div class="footer-bottom">
+            <a href="#" class="logo">beauty canvas</a>
+            <div class="footer-text">
+              <div class="text-left">
+                <p class="name">주식회사 뷰티캔버스</p>
+                <p>
+                  대표이사 : 박진성 <br>사업자등록번호 : 809-81-01574 <br>주소 : (04323)
+                  대구시 중구 중앙대로 394 <br>호스팅사업자 : bc네트웍스<br>
+                  통신판매업신고번호 : 2025-대구중구-1428
+                </p>
+              </div>
+              <div class="text-right">
+                <a href="#">이용약관 법적고지</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">청소년보호방침</a>
+                <a href="#">이메일무단수집거부</a>
+                <p>사업자 정보확인</p>
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
