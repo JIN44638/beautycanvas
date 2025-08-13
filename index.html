@@ -20,6 +20,7 @@
       href="assets/favicon/apple-touch-icon.png"
     />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
     <!-- seo 엔진 최적화 -->
     <!-- 웹페이지의 설명을 정의 -->
     <meta
@@ -54,6 +55,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!--전체 레이아웃 -->
@@ -104,18 +114,48 @@
         </div>
       </header>
       <!-- 비주얼슬라이드 -->
-      <section class="visual">
-        <img src="images/banner(txt).png" alt="비디비치" />
-        <div class="visual-inner contaniner"></div>
-      </section>
+      <!-- 비주얼 배너 스와이퍼 -->
+      <div class="swiper visual">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/banner.jpg" alt="웹비디비치" class="web-img" />
+            <div class="visual-sw-txt">
+                  <h3>비디비치</h3>
+                  <h1>피부에 딱 맞는 <br>딥클렌징으로 <br>고민까지 지워요</h1>
+                  <p>클렌징 라인 런칭 기념 이벤트</p>
+                </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner2.jpg" alt="웹스너글" class="web-img" />
+             <div class="visual-sw-txt">
+                  <h3>스너글</h3>
+                  <h1>입는 순간 포근향 가득 미니 휴대용</h1>
+                  <p>미니파우치 증정 & 구매 이벤트</p>
+                </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner3-del.png" alt="웹민카롱" class="web-img" />
+             <div class="visual-sw-txt">
+                  <h3>최대할인</h3>
+                  <h1>민카롱 출연 <br>최대 40% <br>쏟아지는 혜택</h1>
+                  <p>구매왕 선글라스 증정</p>
+                </div>
+          </div>
+        </div>
+      </div>
       <!--weekly special  -->
       <div class="weeklyspecial">
         <div class="weeklyspecial-inner container">
           <h3>weekly special</h3>
           <ul class="weeklyspecial-img">
-            <li><img src="images/weeklyspecial-1-txt.png" alt="각질제거" /></li>
             <li>
-              <img src="images/weeklyspecial-2-txt.png" alt="바캉스메이크업" />
+              <img src="images/weeklyspecial-1.png" alt="각질제거" />
+              <p>각질제거, 광채추가 </p>
+            </li>
+
+            <li>
+              <img src="images/weeklyspecial-2.png" alt="바캉스메이크업" />
+              <p>바캉스 메이크업!</p>
             </li>
           </ul>
         </div>
@@ -206,9 +246,56 @@
       </div>
       <!-- onlyhere -->
       <div class="onlyhere-wrap">
+        <div class="swiper-pagination"></div>
         <div class="onlyhere-inner container">
           <h3>only here</h3>
-          <ul class="onlyhere-img">
+          <!-- 상품스와이퍼 -->
+          <div class="swiper itemSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/onlyhere1.jpg" alt="onlyhere1" />
+                <div class="item-sw-txt">
+                  <h3>여름 필수템 <br>880원부터~</h3>
+                  <p>8천원쿠폰까지</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/onlyhere2.jpg" alt="onlyhere1" />
+                <div class="item-sw-txt">
+                  <h3>입터짐방지! <br>데일리 간식루틴</h3>
+                  <p>딜라이트 프로젝트</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/onlyhere3.jpg" alt="onlyhere1" />
+                <div class="item-sw-txt">
+                  <h3>공간가득 <br>향으로 완성</h3>
+                  <p>BEST 리빙 컬렉션</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/onlyhere4.jpg" alt="onlyhere1" />
+                <div class="item-sw-txt">
+                  <h3>아이디얼포맨<br>최대 66% 할인</h3>
+                  <p>#매너템#올인원</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/onlyhere5.jpg" alt="onlyhere1" />
+                <div class="item-sw-txt">
+                  <h3>컬러그램 <br>NEW <br>누디블러틴크</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/onlyhere6.jpg" alt="onlyhere1" />
+                <div class="item-sw-txt">
+                  <h3>탄탄 레고트<br>텀블러 한정기획</h3>
+                  <p>더블컷 다이어트젤리</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <ul class="onlyhere-img">
             <li>
               <img src="images/onlyhere1-txt.png" alt="여름필수템" />
             </li>
@@ -218,7 +305,7 @@
             <li>
               <img src="images/onlyhere2-txt.png" alt="입터짐" />
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
       <!-- 하단 (전체라인-container를 inner에 안넣고 footer-top에 부여 )-->
