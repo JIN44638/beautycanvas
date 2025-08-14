@@ -1,0 +1,127 @@
+/* weekly - special */
+.weeklyspecial {
+  padding: 10rem 0;
+}
+
+.weeklyspecial-inner > h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+   font-size: clamp(1.2rem, 1.5rem + 0.5vw, 1.8rem);
+  padding: 1rem 2rem;
+}
+.weeklyspecial-img {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+.weeklyspecial-img > li{
+  position: relative;
+  width: 100%;
+}
+.weeklyspecial-img > li > img {
+  width: 100%;
+}
+.weeklyspecial-img > li >p {
+  font-weight: 800;
+   font-size: clamp(16px , 2.5vw , 32px);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  color: #fff;
+}
+/* <!-- product상품 --> */
+.product-inner {
+  display: flex;
+  gap: 3%;
+}
+.product-inner > div {
+  width: calc(100% / 2);
+}
+.product > h3 {
+  font-weight: 700;
+  font-size: clamp(1.2rem, 1.5rem + 0.5vw, 1.8rem);
+}
+.product > p {
+  text-align: end;
+  color: #c2c1c1;
+}
+.depth {
+  display: flex;
+  gap: 2%;
+  padding-top: 2rem;
+}
+.depth > li {
+  width: calc(100% / 2);
+}
+.depth > li > img {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.depth > li > p {
+  font-weight: 700;
+}
+.red {
+  color: red;
+  font-weight: bold;
+   font-size: clamp(0.8rem , 2.8vw , 1.2rem);
+}
+.gray {
+  color: #c2c1c1;
+  font-weight: 500;
+  font-size: clamp(0.5rem , 2vw , 1rem);
+  text-decoration: line-through;
+}
+.product-coupon > span {
+  border: none;
+  border-radius: 20px;
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+  width: 10%;
+  max-width: 50px;
+  min-width: 30px;
+  text-align: center;
+  color: #fff;
+}
+.gift {
+  background-color: #7ed0f9;
+}
+.sale {
+  background-color: #ed5a5d;
+}
+.coupon {
+  background-color: #9fce00;
+}
+
+/*  <!-- new update --> */
+.newupdate-wrap {
+  margin-top: 90px;
+}
+.newupdate-inner > h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+   font-size: clamp(1.2rem, 1.5rem + 0.5vw, 1.8rem);
+  padding: 1rem 2rem;
+}
+.depth2 {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+.depth2 > li {
+  width: calc((100%-5%) / 2);
+}
+.depth2 > li > img {
+  width: 100%;
+}
+.text-1 {
+  font-weight: 700;
+   font-size: clamp(0.6rem , 2.8vw , 1rem);
+}
+.text-2 {
+  color: #929292;
+   font-size: clamp(0.5rem , 2.8vw , 0.8rem);
+}

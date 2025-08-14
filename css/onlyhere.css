@@ -1,0 +1,74 @@
+/*  <!-- onlyhere --> */
+
+.onlyhere-inner > h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: clamp(1.2rem, 1.5rem + 0.5vw, 1.8rem);
+  padding: 1rem 2rem;
+}
+/* 상품스와이퍼 */
+.onlyhere-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 90px auto;
+}
+.onlyhere-wrap .swiper-slide {
+  width: 100%;
+}
+.itemSwiper .swiper-slide img {
+  width: 100%;
+}
+/* 페이지네이션 삭제 */
+/* .onlyhere-wrap .swiper-pagination {
+  height: 30px;
+  position: absolute;
+  top: 15% !important;
+  left: 90% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 20% !important;
+}
+.onlyhere-wrap .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+} */
+/* 
+.onlyhere-wrap .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+} */
+
+/* onlyhere의 텍스트 위치 변경 */
+.item-sw-txt {
+  /* width: 40%; */
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translatey(-50%);
+  color: #020202;
+  /* 패딩 % 해야 줄일때 자연스럽게 영역 작아짐 */
+  padding: 3%;
+}
+.item-sw-txt > h3 {
+  font-size: clamp(1rem, 1.1rem + 0.5vw, 1.4rem);
+  line-height: 1.2;
+}
+
+/* .onlyhere-img{
+  width: 100%;
+  display: flex;
+  gap: 1%;
+}
+.onlyhere-img > li {
+  width: calc(100% / 3);
+}
+.onlyhere-img > li > img{
+  width: 100%;
+} */

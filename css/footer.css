@@ -1,0 +1,90 @@
+/* 하단 */
+.footer {
+  background-color: #ebebeb;
+}
+.footer-inner {
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #acacac;
+  background-color: #f9f9f9;
+}
+.footer-top {
+  display: flex;
+  gap: 5%;
+  border-top: 1px;
+  position: relative;
+  }
+.footer-top > li > a {
+  display: block;
+  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+}
+/* 메뉴 구분선 만들기 */
+.footer-top > li {
+  position: relative;
+  width: calc(100% / 5);
+}
+.footer-top > li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+   left: -55%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #333;
+}
+
+.footer-top > li:first-child::after {
+  content: none;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+}
+
+.ft-logo {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: clamp(20px, 3vw, 32px);
+  margin: auto;
+  width: 40%;
+}
+.footer-text {
+  display: flex;
+  gap: 5%;
+  width: 60%;
+}
+.text-left {
+  width: 60%;
+}
+.name {
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+}
+.text-left > p {
+  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+}
+.text-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 20px;
+}
+.text-right > a {
+  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+}
+.text-right > p {
+  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+}
+.text-right > i {
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  transform: translatex(-50%, -50%);
+  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+}

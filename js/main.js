@@ -24,15 +24,15 @@ window.addEventListener("load", function () {
       disableOnInteraction: false,
     },
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: 1.5,
     spaceBetween: 10,
     breakpoints: {
       // 1200일때 slidesPerView5개반개 보이겠다
       590: {
-        slidesPerView: 2.5,
+        slidesPerView: 2,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2.5,
       },
       1200: {
         slidesPerView: 3,

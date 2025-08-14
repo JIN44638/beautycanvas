@@ -1,0 +1,124 @@
+/* 상단 */
+.header {
+  width: 100%;
+  margin-top: 70px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.header-top > a {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 800;
+ font-size: clamp(20px, 3vw, 32px);
+  line-height: 36px;
+  width: 30%;
+  max-width: 300px;
+  min-width: 200px;
+  background-color: aquamarine;
+  white-space: nowrap;
+}
+/* 검색/회원가입 */
+.search-login {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  gap: 1%;
+}
+.search-bar {
+  display: flex;
+  border: 1.5px solid #3c388e;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  padding: 0 3%;
+  width: 20%;
+  max-width: 250px;
+  min-width: 150px;
+}
+/* 검색아이콘 */
+.search-bar > i {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search-bar input {
+  border: 0;
+  outline: none;
+}
+/* 회원가입 */
+.gnb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-evenly;
+  gap: 5%;
+}
+.gnb > li {
+  position: relative;
+  width: calc(100% / 5);
+}
+.gnb > li > a {
+  display: block;
+  font-size: clamp(14px, 0.5vw, 16px);
+  text-align: center;
+  min-width: 52px;
+}
+.gnb > li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -17%;
+  /* transform: translate(-50% , -50%); */
+  width: 1px;
+  height: 12px;
+  background-color: #333;
+}
+.gnb > li:last-child::after {
+  content: none ;
+}
+
+
+
+
+/* 상단아래  */
+.header-bottom {
+  display: flex;
+  padding: 1rem 2rem;
+  margin-top: 50px;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border: 0;
+  background: none;
+  gap: 5px;
+  padding-top: 4px;
+}
+.gnb2 {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+.gnb2 > li {
+  width: calc((100% - 25px) / 5);
+  text-align: center;
+}
+.gnb2 > li > a { 
+    display: block;
+     font-size: clamp(15px, 2vw, 20px);
+}
+/* 햄버거바 */
+.hamburger > span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+}
