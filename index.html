@@ -85,13 +85,19 @@
                 <input type="text" placeholder="상품, 브랜드 검색" />
               </div>
               <!-- 회원가입 -->
-              <ul class="gnb">
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">장바구니</a></li>
-                <li><a href="#">주문배송</a></li>
-                <li><a href="#">고객센터</a></li>
-              </ul>
+              <div class="login">
+                <ul class="gnb">
+                  <li><a href="#">로그인</a></li>
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#">장바구니</a></li>
+                  <li><a href="#">주문배송</a></li>
+                  <li><a href="#">고객센터</a></li>
+                </ul>
+                <div class="icon">
+                  <i class="fa-solid fa-user-plus"></i>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
             </div>
             <!-- 상단아래 -->
           </div>
@@ -113,44 +119,51 @@
           </div>
         </div>
       </header>
+      <!-- 서브메뉴 -->
+      <ul class="fix-menu">
+        <li>스킨케어</li>
+        <li>메이크업</li>
+        <li>뷰티소품</li>
+        <li>맨즈케어</li>
+        <li>헤어케어</li>
+        <li>건강식품</li>
+        <li>생활용품</li>
+        <li>구강용품</li>
+      </ul>
+
       <!-- 비주얼슬라이드 -->
       <!-- 비주얼 배너 스와이퍼 -->
       <div class="swiper visual">
-        <ul class="fix-menu">
-          <li>스킨케어</li>
-          <li>메이크업</li>
-          <li>뷰티소품</li>
-          <li>맨즈케어</li>
-          <li>헤어케어</li>
-          <li>건강식품</li>
-          <li>생활용품</li>
-          <li>구강용품</li>
-        
-        </ul>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="images/banner.jpg" alt="웹비디비치" class="web-img" />
+            <img src="images/banner -tablet.png" alt="테블릿비디비치" class="tab-img" />
+            <img src="images/banner1-mobile.png" alt="모바일비디비치" class="mob-img" />
             <div class="visual-sw-txt">
-                  <h3>비디비치</h3>
-                  <h1>피부에 딱 맞는 <br>딥클렌징으로 <br>고민까지 지워요</h1>
-                  <p>클렌징 라인 런칭 기념 이벤트</p>
-                </div>
+              <h3>비디비치</h3>
+              <h1>피부에 딱 맞는 <br />딥클렌징으로 <br />고민까지 지워요</h1>
+              <p>클렌징 라인 런칭 기념 이벤트</p>
+            </div>
           </div>
           <div class="swiper-slide">
             <img src="images/banner2.jpg" alt="웹스너글" class="web-img" />
-             <div class="visual-sw-txt">
-                  <h3>스너글</h3>
-                  <h1>입는 순간 <br>포근향 가득 <br>미니 휴대용</h1>
-                  <p>미니파우치 증정 & 구매 이벤트</p>
-                </div>
+             <img src="images/banner2 -tablet.png" alt="테블릿스너글" class="tab-img" />
+            <img src="images/banner2-mobile.png" alt="모바일스너글" class="mob-img" />
+            <div class="visual-sw-txt">
+              <h3>스너글</h3>
+              <h1>입는 순간 <br />포근향 가득 <br />미니 휴대용</h1>
+              <p>미니파우치 증정 & 구매 이벤트</p>
+            </div>
           </div>
           <div class="swiper-slide">
             <img src="images/banner3-del.png" alt="웹민카롱" class="web-img" />
-             <div class="visual-sw-txt">
-                  <h3>최대할인</h3>
-                  <h1>민카롱 출연 <br>최대 40% <br>쏟아지는 혜택</h1>
-                  <p>구매왕 선글라스 증정</p>
-                </div>
+            <img src="images/banner3 -tablet.png" alt="테블릿민카롱" class="tab-img" />
+            <img src="images/banner3-mobile.png" alt="모바일민카롱" class="mob-img" />
+            <div class="visual-sw-txt">
+              <h3>최대할인</h3>
+              <h1>민카롱 출연 <br />최대 40% <br />쏟아지는 혜택</h1>
+              <p>구매왕 선글라스 증정</p>
+            </div>
           </div>
         </div>
       </div>
@@ -161,7 +174,7 @@
           <ul class="weeklyspecial-img">
             <li>
               <img src="images/weeklyspecial-1.png" alt="각질제거" />
-              <p>각질제거, 광채추가 </p>
+              <p>각질제거, 광채추가</p>
             </li>
 
             <li>
@@ -266,58 +279,60 @@
               <div class="swiper-slide">
                 <img src="images/onlyhere1.jpg" alt="onlyhere1" />
                 <div class="item-sw-txt">
-                  <h3>여름 필수템 <br>880원부터~</h3>
+                  <h3>여름 필수템 <br />880원부터~</h3>
                   <p>8천원쿠폰까지</p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img src="images/onlyhere2.jpg" alt="onlyhere1" />
                 <div class="item-sw-txt">
-                  <h3>입터짐방지! <br>데일리 간식루틴</h3>
+                  <h3>입터짐방지! <br />데일리 간식루틴</h3>
                   <p>딜라이트 프로젝트</p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img src="images/onlyhere3.jpg" alt="onlyhere1" />
                 <div class="item-sw-txt">
-                  <h3>공간가득 <br>향으로 완성</h3>
+                  <h3>공간가득 <br />향으로 완성</h3>
                   <p>BEST 리빙 컬렉션</p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img src="images/onlyhere4.jpg" alt="onlyhere1" />
                 <div class="item-sw-txt">
-                  <h3>아이디얼포맨<br>최대 66% 할인</h3>
+                  <h3>아이디얼포맨<br />최대 66% 할인</h3>
                   <p>#매너템#올인원</p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img src="images/onlyhere5.jpg" alt="onlyhere1" />
                 <div class="item-sw-txt">
-                  <h3>컬러그램 <br>NEW <br>누디블러틴크</h3>
+                  <h3>컬러그램 <br />NEW <br />누디블러틴크</h3>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img src="images/onlyhere6.jpg" alt="onlyhere1" />
                 <div class="item-sw-txt">
-                  <h3>탄탄 레고트<br>텀블러 한정기획</h3>
+                  <h3>탄탄 레고트<br />텀블러 한정기획</h3>
                   <p>더블컷 다이어트젤리</p>
                 </div>
               </div>
             </div>
           </div>
-                 </div>
+        </div>
       </div>
       <!-- 하단 (전체라인-container를 inner에 안넣고 footer-top에 부여 )-->
       <footer class="footer">
         <div class="footer-inner">
-          <ul class="footer-top container">
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">채용안내</a></li>
-            <li><a href="#">가맹점 개설문의</a></li>
-            <li><a href="#">상품입점 문의</a></li>
-            <li><a href="#">고객센터</a></li>
-          </ul>
+          <div class="container">
+            <ul class="footer-top">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">채용안내</a></li>
+              <li><a href="#">가맹점 개설문의</a></li>
+              <li><a href="#">상품입점 문의</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </div>
         </div>
         <div class="footer-bottom container">
           <a href="#" class="ft-logo">beauty canvas</a>
@@ -336,8 +351,7 @@
               <a href="#">개인정보처리방침</a>
               <a href="#">청소년보호방침</a>
               <a href="#">이메일무단수집거부</a>
-              <p>사업자 정보확인</p>
-              <i class="fa-solid fa-angle-right"></i>
+              <p>사업자 정보확인 <i class="fa-solid fa-angle-right"></i></p>
             </div>
           </div>
         </div>

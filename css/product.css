@@ -1,6 +1,7 @@
 /* weekly - special */
 .weeklyspecial {
   padding: 10rem 0;
+  z-index: 9;
 }
 
 .weeklyspecial-inner > h3 {
@@ -62,6 +63,7 @@
 
 .depth > li > p {
   font-weight: 700;
+  font-size: clamp(0.8rem , 3.2vw , 1rem);
 }
 .red {
   color: red;
@@ -124,4 +126,24 @@
 .text-2 {
   color: #929292;
    font-size: clamp(0.5rem , 2.8vw , 0.8rem);
+}
+/* 반응형 */
+@media screen and (max-width: 880px) {
+  
+  }
+
+@media screen and (max-width: 768px) {
+  .product-inner{
+     flex-direction: column;
+     align-items: center;
+     gap: 50px;
+      }
+  .product-inner > div {
+  width: 80%;
+}
+ 
+}
+@media screen and (max-width: 500px) {
+}
+@media screen and (max-width: 390px) {
 }
