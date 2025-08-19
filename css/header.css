@@ -173,6 +173,8 @@
     gap: 10px;
   }
   .fix-menu {
+    width: 13%;
+    height: 42vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -183,6 +185,14 @@
   }
   .header-top > .logo {
     padding-bottom: 5%;
+  }
+  .fix-menu {
+    width: 16%;
+    height: 40vw;
+  }
+  .fix-menu > li {
+    font-size: clamp(0.8rem, 0.5vw, 1.2rem);
+    padding: 1%;
   }
 }
 @media screen and (max-width: 390px) {
@@ -199,5 +209,13 @@
   }
   .icon {
     gap: 5px;
+  }
+  .fix-menu {
+    width: 16%;
+    height: 40vw;
+  }
+  .fix-menu > li {
+    font-size: clamp(0.7rem, 0.1vw, 1.2rem);
+    padding: 1%;
   }
 }
