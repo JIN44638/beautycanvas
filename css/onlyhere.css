@@ -57,8 +57,12 @@
   padding: 3%;
 }
 .item-sw-txt > h3 {
-  font-size: clamp(1rem, 1.1rem + 0.5vw, 1.4rem);
+  font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1.4rem);
   line-height: 1.2;
+}
+.item-sw-txt > p {
+  font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1.4rem);
+ 
 }
 
 /* .onlyhere-img{

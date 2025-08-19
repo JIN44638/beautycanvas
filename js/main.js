@@ -2,9 +2,9 @@ window.addEventListener("load", function () {
   // 비주얼 스와이퍼
   const visual = new Swiper(".visual", {
     // 클릭안하고 슬라이드 자동으로 넘어가게 설정
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
     },
     //마지막 슬라이드에서 loop 반복되게 설정 , 아래 코드는 스와이퍼 사이트에서 가져옴(pagination,navigation)
     loop: true,

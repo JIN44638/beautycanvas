@@ -7,12 +7,11 @@
   padding: 20px 0;
   border-top: 1px solid #333;
   border-bottom: 1px solid #acacac;
- background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 .footer-top {
   border-top: 1px;
   position: relative;
- 
 }
 .footer-top > li {
   display: inline-block;
@@ -23,7 +22,7 @@
 .footer-top > li > a {
   width: 100%;
   display: block;
-  font-size: 14px;
+  font-size: clamp(0.7rem, 1.8vw, 1rem);
   text-align: center;
 }
 /* 메뉴 구분선 만들기 */
@@ -31,7 +30,7 @@
 .footer-top > li::after {
   content: "";
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   left: 0;
   width: 1px;
@@ -53,8 +52,9 @@
   text-transform: uppercase;
   font-weight: 800;
   font-size: clamp(20px, 3vw, 32px);
-  margin: auto;
+  margin: auto 0;
   width: 40%;
+  /* text-align: center; */
 }
 .footer-text {
   display: flex;
@@ -67,10 +67,11 @@
 .name {
   padding-bottom: 5px;
   font-weight: bold;
-  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+  font-size: clamp(0.7rem, 2.8vw, 0.8rem);
 }
 .text-left > p {
-  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+  /* font-size: clamp(0.5rem, 2.8vw, 0.8rem); */
+   font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
 .text-right {
   position: relative;
@@ -80,15 +81,52 @@
   padding-top: 20px;
 }
 .text-right > a {
-  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+  /* font-size: clamp(0.5rem, 2.8vw, 0.8rem); */
+   font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
 .text-right > p {
-  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+  /* font-size: clamp(0.5rem, 2.8vw, 0.8rem); */
+   font-size: clamp(0.7rem, 1.5vw, 1rem);
+   /* width: 100%; */
 }
-.text-right > i {
+.text-right > p>i {
   position: absolute;
-  bottom: 5%;
-  left: 30%;
+  bottom: 7%;
+  left: 50%;
   transform: translatex(-50%, -50%);
-  font-size: clamp(0.5rem, 2.8vw, 0.8rem);
+  /* font-size: clamp(0.5rem, 2.8vw, 0.8rem); */
+   font-size: clamp(0.7rem, 1.5vw, 1rem);
+   color: #727272;
+}
+/* 반응형 */
+@media screen and (max-width: 962px) {
+    /* .ft-logo {
+   width: 20%; */
+   .footer-bottom {
+  display: block;
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .footer-top {
+    width: 100%;
+  }
+  .footer-top > li {
+    width: calc(100%-5% / 5);
+    
+  }
+  .footer-top > li > a {
+    width: 100%;
+  }
+  /* .ft-logo {
+   width: 30%;
+}
+  .text-left {
+  width: 100%;
+ }
+  */
 }

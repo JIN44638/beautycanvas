@@ -24,8 +24,10 @@
   width: 100%;
 }
 .weeklyspecial-img > li >p {
+  width: 100%;
+  text-align: center;
   font-weight: 800;
-   font-size: clamp(16px , 2.5vw , 32px);
+   font-size: clamp(15px , 2.5vw , 32px);
   position: absolute;
   top: 80%;
   left: 50%;
@@ -47,6 +49,9 @@
 .product > p {
   text-align: end;
   color: #c2c1c1;
+}
+.product > p > span, i{
+  font-size: clamp(0.8rem , 1.8vw , 1.2rem);
 }
 .depth {
   display: flex;
@@ -133,6 +138,12 @@
   }
 
 @media screen and (max-width: 768px) {
+  .weeklyspecial-img {
+  width:60%;
+  display: block;
+  margin: auto;
+ 
+}
   .product-inner{
      flex-direction: column;
      align-items: center;
