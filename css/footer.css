@@ -52,7 +52,6 @@
   text-transform: uppercase;
   font-weight: 800;
   font-size: clamp(20px, 3vw, 32px);
-  margin: auto 0;
   width: 40%;
   /* text-align: center; */
 }
@@ -71,7 +70,7 @@
 }
 .text-left > p {
   /* font-size: clamp(0.5rem, 2.8vw, 0.8rem); */
-   font-size: clamp(0.7rem, 1.5vw, 1rem);
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
 .text-right {
   position: relative;
@@ -82,34 +81,45 @@
 }
 .text-right > a {
   /* font-size: clamp(0.5rem, 2.8vw, 0.8rem); */
-   font-size: clamp(0.7rem, 1.5vw, 1rem);
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
 .text-right > p {
   /* font-size: clamp(0.5rem, 2.8vw, 0.8rem); */
-   font-size: clamp(0.7rem, 1.5vw, 1rem);
-   /* width: 100%; */
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
+  /* width: 100%; */
 }
-.text-right > p>i {
-  position: absolute;
-  bottom: 7%;
-  left: 50%;
-  transform: translatex(-50%, -50%);
+.text-right > p > i {
+margin-left: 2%;
   /* font-size: clamp(0.5rem, 2.8vw, 0.8rem); */
-   font-size: clamp(0.7rem, 1.5vw, 1rem);
-   color: #727272;
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
+  color: #727272;
+}
+.thumbnail{
+  width: 100%;
 }
 /* 반응형 */
 @media screen and (max-width: 962px) {
-    /* .ft-logo {
-   width: 20%; */
-   .footer-bottom {
-  display: block;
+  .ft-logo {
+   width: 100%;}
+   .footer-inner{
+    width: 100% ;
+   }
+  .footer-bottom {
+    display: block;
+    width: 100% ;
+  }
+  .ft-logo {
+    padding-bottom: 10px;
+  }
+  .footer-text {
+    flex-direction: column;
+    width: 100% ;
+  }
+
 }
 
 @media screen and (max-width: 700px) {
-
 }
-
 
 @media screen and (max-width: 500px) {
   .footer-top {
@@ -117,7 +127,6 @@
   }
   .footer-top > li {
     width: calc(100%-5% / 5);
-    
   }
   .footer-top > li > a {
     width: 100%;
