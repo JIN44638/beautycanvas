@@ -141,7 +141,7 @@
   max-width: 120px;
   height: 22vw;
   max-height: 250px;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   padding: 1%;
   /* display: block; */
   opacity: 0;
