@@ -97,7 +97,7 @@ margin-left: 2%;
 /* 섬네일-배포시 */
 .thumbnail{
   width: 20%;
-  display: none;
+  /* display: none; */
 }
 /* 반응형 */
 @media screen and (max-width: 962px) {
