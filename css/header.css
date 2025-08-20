@@ -18,7 +18,6 @@
   max-width: 300px;
   min-width: 200px;
   white-space: nowrap;
-  
 }
 /* 검색/회원가입 */
 .search-login {
@@ -36,7 +35,7 @@
   position: relative;
   padding: 1% 2%;
   width: 30%;
-  max-width: 350px;
+  max-width: 250px;
   min-width: 150px;
 }
 /* 검색아이콘 */
@@ -91,9 +90,6 @@
 .icon {
   display: none;
 }
-/* .icon-right {
-  display: flex;
-  gap: 20%; */
 
 /* 상단아래  */
 .header-bottom {
@@ -167,11 +163,17 @@
   .gnb {
     display: none;
   }
+  .login{
+    width: 10%;
+  }
   .icon {
     display: flex;
-
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     gap: 10px;
+  }
+  .search-bar{
+    width: 50%;
+    padding:2% 3%;
   }
   .fix-menu {
     width: 13%;
@@ -187,30 +189,27 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .header-top > a{
-
-    background-color: red;
-  }
- 
+   
   .fix-menu {
     width: 16%;
     height: 40vw;
   }
   .fix-menu > li {
-    font-size: clamp(0.8rem, 0.5vw, 1.2rem);
-    padding: 1%;
+    font-size: clamp(0.7rem, 0.5vw, 1.2rem);
+    padding: 0.5%;
+    font-weight: 400;
   }
-  .search-login{
-    width: 90%;
+  .search-login {
+    width: 100%;
     justify-content: space-between;
   }
-  .login{
-    width:10%;
-    background-color: red;
+  .login {
+    width: 10%;
   }
-  .search-bar{
-    width: 70%;
-  }
+  .search-bar {
+    width:50%;
+    padding: 10px ;
+   }
 }
 @media screen and (max-width: 390px) {
   .search-bar {
@@ -234,5 +233,6 @@
   .fix-menu > li {
     font-size: clamp(0.7rem, 0.1vw, 1.2rem);
     padding: 1%;
+    font-weight: 400;
   }
 }
