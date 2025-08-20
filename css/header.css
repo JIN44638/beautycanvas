@@ -131,39 +131,37 @@
 /* 서브메뉴 */
 .fix-menu {
   position: absolute;
-  /* top: 0; */
-  left: 7%;
-  z-index: 9999;
-  width: 10%;
-  max-width: 120px;
-  height: 22vw;
-  max-height: 250px;
-  /* overflow-y: scroll; */
-  padding: 1%;
-  /* display: block; */
+  left: 0px;
+  top: 0px;
+   z-index: 9999;
   opacity: 0;
   visibility: hidden;
-  background-color: aqua;
-  transition: all 0.3s;
+  transition: all 0.01s;
+  padding: 1% 0;
+  
 }
 .fix-menu > li {
+  width: 150px;
   font-size: clamp(12px, 0.8vw, 16px);
   font-weight: 500;
   color: #fff;
-  padding: 3% 0;
+  padding: 3% 10%;
 }
 .fix-menu.active {
   visibility: visible;
   background-color: #3c388e;
   opacity: 0.5;
 }
-
+.fix-menu > li:hover {
+  width: 150px;
+  background-color: #030042;
+}
 /* 반응형 */
 @media screen and (max-width: 880px) {
   .gnb {
     display: none;
   }
-  .login{
+  .login {
     width: 10%;
   }
   .icon {
@@ -171,14 +169,11 @@
     /* justify-content: flex-end; */
     gap: 10px;
   }
-  .search-bar{
+  .search-bar {
     width: 50%;
-    padding:2% 3%;
+    padding: 2% 3%;
   }
-  .fix-menu {
-    width: 13%;
-    height: 42vw;
-  }
+ 
 }
 @media screen and (max-width: 768px) {
 }
@@ -189,17 +184,8 @@
     flex-direction: column;
     align-items: flex-start;
   }
-   
-  .fix-menu {
-    width: 16%;
-    height: 40vw;
-  }
-  .fix-menu > li {
-    font-size: clamp(0.7rem, 0.5vw, 1.2rem);
-    padding: 0.5%;
-    font-weight: 400;
-  }
-  .search-login {
+
+   .search-login {
     width: 100%;
     justify-content: space-between;
   }
@@ -207,9 +193,9 @@
     width: 10%;
   }
   .search-bar {
-    width:50%;
-    padding: 10px ;
-   }
+    width: 50%;
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 390px) {
   .search-bar {
@@ -226,13 +212,5 @@
   .icon {
     gap: 5px;
   }
-  .fix-menu {
-    width: 16%;
-    height: 40vw;
-  }
-  .fix-menu > li {
-    font-size: clamp(0.7rem, 0.1vw, 1.2rem);
-    padding: 1%;
-    font-weight: 400;
-  }
+
 }

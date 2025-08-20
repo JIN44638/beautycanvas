@@ -35,7 +35,15 @@
   padding: 0.8rem 0;
   line-height: 1.2;
 }
-
+/* 페이지네이션 색상변경 */
+/* .swiper-pagination-bullet-active {
+  background-color: rgb(117, 117, 117) !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  top: 10% !important;
+    left: 80% !important;
+    transform: translateX(-50%);
+} */
 /* 반응형 */
 @media screen and (max-width: 880px) {
   .web-img {
@@ -71,7 +79,7 @@
   .tab-img {
     display: none;
   }
-   .visual-sw-txt {
+  .visual-sw-txt {
     position: relative;
     top: 0;
     left: 25%;

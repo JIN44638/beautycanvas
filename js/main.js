@@ -17,6 +17,14 @@ window.addEventListener("load", function () {
       prevEl: ".swiper-button-prev",
     },
   });
+  // 비주얼 페이지네이션 추가
+  // const swiper = new Swiper(".visual", {
+  //   loop: true,
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     dynamicBullets: true,
+  //   },
+  // });
   //  상품 스와이퍼 적용 slidesPerView(이미지1.5개나옴),paceBetween 간격넣기, breakpoints반응형코드 적용
   const itemSwiper = new Swiper(".itemSwiper", {
     autoplay: {
@@ -46,13 +54,13 @@ window.addEventListener("load", function () {
       },
     },
   });
+
   // 햄버거 메뉴 클릭시
   const hamburger = this.document.querySelector("#hamburger");
   const fixMenus = this.document.querySelector(".fix-menu");
-  hamburger.addEventListener("click", function () {
-    fixMenus.classList.add("active");
-  });
-  hamburger.addEventListener("mouseleave", function () {
-    fixMenus.classList.remove("active");
-  });
+ 
+  const toggleMenu1 = function hamburger() {
+    fixMenus.classList.toggle("active");
+  };
+  hamburger.addEventListener("click", toggleMenu1);
 });
