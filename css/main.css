@@ -24,6 +24,7 @@ a {
 }
 body {
   font-family: "Poppins", "Noto Sans KR", sans-serif;
+  position: relative;
 }
 html {
   font-size: 16px;

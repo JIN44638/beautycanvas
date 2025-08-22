@@ -58,9 +58,19 @@ window.addEventListener("load", function () {
   // 햄버거 메뉴 클릭시
   const hamburger = this.document.querySelector("#hamburger");
   const fixMenus = this.document.querySelector(".fix-menu");
- 
+
   const toggleMenu1 = function hamburger() {
     fixMenus.classList.toggle("active");
   };
   hamburger.addEventListener("click", toggleMenu1);
+
+  // gotop버튼
+  const goTopBtn = this.document.querySelector("#goTop");
+  goTopBtn.addEventListener("click", function () {
+    // 스크롤to는 어디로 가라는 의미 = 윈도위에서 맨위로 올리기(행동 스무스하게)
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 });
