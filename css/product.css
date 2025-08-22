@@ -61,7 +61,7 @@
 .depth {
   display: flex;
   gap: 2%;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 .depth > li {
   width: calc(100% / 2);
