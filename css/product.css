@@ -50,10 +50,12 @@
 .product > h3 {
   font-weight: 700;
   font-size: clamp(1.2rem, 1.5rem + 0.5vw, 1.8rem);
+  
 }
 .product > p {
   text-align: end;
   color: #c2c1c1;
+
 }
 .product > p > span, i{
   font-size: clamp(0.8rem , 1.8vw , 1.2rem);
@@ -85,6 +87,9 @@
   font-weight: 500;
   font-size: clamp(0.5rem , 2vw , 1rem);
   text-decoration: line-through;
+}
+.ppp span{
+  line-height: 25px;
 }
 .product-coupon > span {
   border: none;

@@ -37,10 +37,12 @@
   color: #575757;
 }
 .visual-sw-txt > h1 {
-  font-size: clamp(18px, 3vw, 32px);
+  font-size: clamp(16px, 3vw, 28px);
   padding: 0.8rem 0;
   line-height: 1.2;
   color: #575757;
+  font-weight: normal;
+
 }
 .visual-sw-txt > p{
   color: #575757;
@@ -113,6 +115,10 @@
 }
 
 @media screen and (max-width: 390px) {
-  .visual-sw-txt {
+ .visual-sw-txt > p{
+  font-size: 14px;
+}
+ .visual-sw-txt h1 {
+   padding-top: 1%;
   }
 }
