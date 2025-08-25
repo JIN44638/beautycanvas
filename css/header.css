@@ -2,7 +2,7 @@
 #goTop {
   position: fixed;
   bottom: 50px;
-  right: 50px;
+  right: 5%;
   z-index: 9999;
   border: 0;
   background: none;
