@@ -15,6 +15,7 @@
 }
 .weeklyspecial-img {
   width: 100%;
+  min-width: 148px;
   display: flex;
   gap: 2%;
 }
@@ -138,6 +139,7 @@
 }
 .depth2 > li > img {
   width: 100%;
+  min-width: 142px;
 }
 .text-1 {
   font-weight: 700;
