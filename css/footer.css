@@ -23,7 +23,7 @@
 .footer-top > li > a {
   width: 100%;
   display: block;
-  font-size: clamp(0.7rem, 1.8vw, 1rem);
+   font-size: clamp(14px, 1vw, 20px);
   text-align: center;
 }
 /* 메뉴 구분선 만들기 */
