@@ -109,6 +109,7 @@
   display: flex;
   padding: 1rem 0.5rem;
   justify-content: center;
+  min-width: 270px
 }
 .ham-category {
   display: flex;

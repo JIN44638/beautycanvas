@@ -19,6 +19,7 @@
 }
 .itemSwiper .swiper-slide img {
   width: 100%;
+  min-width: 160px;
 }
 /* 페이지네이션 삭제 */
 /* .onlyhere-wrap .swiper-pagination {
@@ -62,7 +63,7 @@
 }
 .item-sw-txt > p {
   font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1.4rem);
- 
+ min-width: 110px;
 }
 
 /* .onlyhere-img{

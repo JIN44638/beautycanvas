@@ -27,6 +27,7 @@
 }
 .weeklyspecial-img > li >p {
   width: 100%;
+  min-width: 128px;
   text-align: center;
   font-weight: 800;
    font-size: clamp(15px , 2.5vw , 32px);
@@ -38,7 +39,7 @@
 }
 /* <!-- product상품 --> */
 .product-wrap{
-  padding-top: 8%;
+  margin-top: 10%;
 }
 .product-inner {
   display: flex;
@@ -67,6 +68,7 @@
 }
 .depth > li {
   width: calc(100% / 2);
+  min-width: 100px;
 }
 .depth > li > img {
   width: 100%;
@@ -92,6 +94,7 @@
   line-height: 25px;
 }
 .product-coupon > span {
+  display: inline-block;
   border: none;
   border-radius: 20px;
   padding: 0.2rem 1rem;
@@ -114,7 +117,7 @@
 
 /*  <!-- new update --> */
 .newupdate-wrap {
-  margin-top: 90px;
+  margin-top: 14%;
   padding-bottom: 5%;
    background-color: #f5f5fd;
 }
@@ -169,4 +172,7 @@
 @media screen and (max-width: 500px) {
 }
 @media screen and (max-width: 390px) {
+.coupon{
+margin-top: 2px;
+  }
 }

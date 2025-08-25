@@ -12,6 +12,7 @@
 .footer-top {
   border-top: 1px;
   position: relative;
+  min-width: 353px;
 }
 .footer-top > li {
   display: inline-block;
@@ -59,6 +60,7 @@
   display: flex;
   gap: 5%;
   width: 60%;
+  min-width: 345px;
 }
 .text-left {
   width: 60%;
