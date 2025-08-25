@@ -112,8 +112,9 @@
 }
 .ham-category {
   display: flex;
-  gap: 1%;
+  gap: 5%;
   width: 20%;
+  align-items: center;
 }
 .ham-category > a {
   font-size: clamp(14px, 1vw, 20px);
@@ -125,10 +126,9 @@
   cursor: pointer;
   border: 0;
   background: none;
-  gap: 8px;
+  gap: 6px;
   padding-top: 2px;
   align-items: center;
-  /* margin-top: auto; */
 }
 
 .hamburger > span {
