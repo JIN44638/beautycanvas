@@ -12,18 +12,16 @@
 .footer-top {
   border-top: 1px;
   position: relative;
-  min-width: 353px;
 }
 .footer-top > li {
   display: inline-block;
   padding: 0 2%;
   position: relative;
-  /* width: calc((100%-10%) / 5); */
 }
 .footer-top > li > a {
   width: 100%;
   display: block;
-   font-size: clamp(14px, 1vw, 20px);
+  font-size: clamp(12px, 1vw, 20px);
   text-align: center;
 }
 /* 메뉴 구분선 만들기 */
@@ -126,21 +124,23 @@
 @media screen and (max-width: 500px) {
   .footer-top {
     width: 100%;
+    min-width: 380px;
   }
   .footer-top > li {
-    width: calc(100%-5% / 5);
+    /* width: calc(100%-10% / 5); */
   }
   .footer-top > li > a {
-    width: 100%;
+    /* width: 100%; */
+
+    font-size: clamp(12px , 0.1vw,14px)
   }
 }
-
 @media screen and (max-width: 390px) {
   .footer-top > li {
     padding: 0 1%;
   }
   .footer-top > li > a {
-    width: 100%;
-    display: block;
+    /* width: 100%;
+    display: block; */
   }
 }
